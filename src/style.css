@@ -1,0 +1,102 @@
+/* 기본 폰트 및 배경 설정 */
+body {
+    background-color: #a0e7ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 회원가입 컨테이너 */
+.main-container {
+    background: #ddf3ff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 100%;
+}
+
+/* 폼 제목 */
+.main-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* 폼 세로 정렬*/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 라벨 스타일 블럭형태로 폰트 지정 */
+.main-container label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+}
+
+/* 입력 필드 스타일 너비, 테두리 둥글게*/
+.main-container input {
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* 입력 필드의 패딩을 너비에 포함 */
+}
+
+.main-container .inputerror {
+    visibility: hidden;
+}
+
+/* 가입하기 버튼 */
+.main-container button {
+    background-color: #414141;
+    color: white;
+    padding: 15px 20px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* 모달 배경 */
+.modal {
+    display: none;
+    position: fixed; /* 화면에 고정 */
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* 모달 내부 컨테이너 */
+.modal-container {
+    background: #fff; /* 흰색 배경 */
+    padding: 20px; /* 패딩 */
+    border-radius: 5px; 
+    width: auto; /* 자동으로 너비를 설정 */
+  }
+  
+  /* 모달 제목 */
+.modal-container h2 {
+    font-size: 24px; /* 큰 글씨 크기 */
+    margin-bottom: 20px; /* 제목과 내용 사이에 간격을 추가합니다 */
+  }
+  
+  /* 모달 본문 텍스트 */
+.modal-container label {
+    font-size: 16px; /* 본문 텍스트의 글씨 크기 */
+    margin-bottom: 15px; /* 본문 텍스트와 버튼 사이에 간격을 추가합니다 */
+  }
+  
+  /* 닫기 버튼 스타일 */
+.modal-container button {
+    padding: 10px 20px; /* 버튼의 패딩 */
+    background-color: #333; /* 버튼 배경색 */
+    color: #fff; /* 버튼 내 글씨 색상 */
+    border-radius: 5px; /* 버튼 모서리 둥글게 */
+}

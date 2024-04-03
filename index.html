@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/style.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- 메인 컨테이너 회원가입 입력칸 -->
+    <div class="main-container">
+        <h2 id="signup">회원가입</h2>
+        <form id="signupForm">
+            <div class="input-form">
+                <label for="username">이름</label>
+                <input type="text" id="username" placeholder="">
+                <label class="inputerror" id="usernameerror">에러 메시지</label>
+            </div>
+            <div class="input-form">
+                <label for="email">이메일</label>
+                <input type="email" id="email" placeholder="">
+                <label class="inputerror" id="emailerror">에러 메시지</label>
+            </div>
+            <div class="input-form">
+                <label for="userage">나이</label>
+                <input type="number" id="userage" placeholder="">
+                <label class="inputerror" id="useragerror">에러 메시지</label>
+            </div>
+            <div class="input-form">
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" placeholder="">
+                <label class="inputerror" id="passworderror">에러 메시지</label>
+            </div>
+            <div class="input-form">
+                <label for="password2">비밀번호 확인</label>
+                <input type="password" id="password2" placeholder="">
+                <label class="inputerror" id="password2error">에러 메시지</label>
+            </div>
+            <button type="submit" id="subsign">회원가입</button>
+        </form>
+    </div>
+    <!-- 모달 칸 -->
+    <div id="successSignup" class="modal">
+        <div class="modal-container">
+            <h2>가입성공!</h2>
+            <form id="success">
+                <label>UMC 챌린저에 가입하신걸 축하드립니다.</label>
+                <button id="close">닫기</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="src/js.js"></script>
+</body>
+</html>
